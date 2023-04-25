@@ -1,22 +1,37 @@
 openapi: '3.0.2'
 info:
   title: Quotation API
+  description: Get a valid quote online
   version: '1.0'
+  contact: 
+    email : 'shiffana95@gmail.com'
 servers:
   - url : https://api.server.test/v1
+tags:
+    - name: RFQ
 paths:
-  /test:
-    get:
+  /rqfs:
+    post:
+      tags:
+        - RFQ
+      operationId: getQuote
+      description: Request a quoute 
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Quotation"
       responses:
         '200':
           description: OK
 
 
+
 components :
    schemas:
      Quotation:
-        type: object
-        properties:
+       type: object
+       properties:
           id:
             type: integer
           product:
