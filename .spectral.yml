@@ -16,13 +16,13 @@ rules:
         schema:
           type: object
           oneOf:
-            - required: ["maxLength"]
-            - required: ["enum"]
-            - required: ["const"]
-            - required: ["format"]
+            - required: [maxLength]
+            - required: [enum]
+            - required: [const]
+            - required: [format]
               properties: 
               format:
                    type: string
-                   enum: ["uuid","date","date-time"]
+                   enum: [uuid,date,date-time]
 
  
