@@ -26,7 +26,6 @@ paths:
           description: OK
 
 
-
 components :
    schemas:
      Quotation:
