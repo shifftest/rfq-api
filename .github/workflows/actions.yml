@@ -9,4 +9,3 @@ jobs:
       - uses: actions/setup-node@v3
       - run: npm install -g @stoplight/spectral-cli
       - run: spectral lint rfq-api-v1.oas.yaml
- 
