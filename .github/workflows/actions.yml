@@ -1,6 +1,6 @@
+name: OpenAPI Checks
 on:
-  - push
-
+- pull_request
 jobs:
   Checks:
     runs-on: ubuntu-latest
